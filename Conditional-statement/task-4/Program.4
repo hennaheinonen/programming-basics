@@ -1,72 +1,28 @@
 ﻿using System;
 
-namespace task1.4
+namespace Conditionalstatement
 {
-	class MainClass
-	{
-		public static void Main(string[] args)
-		{
-			//Define instructions
-			Console.WriteLine("Ohjelma asettaa annetut luvut suuruusjärjestykseen");
-			bool isNumber;
-			do
-			{
+    class MainClass
+    {
+        public static void Main(string[] args)
+        {
+            //Define instructions
+            Console.WriteLine("Ohjemlma asettaa luvut suuruusjärjestykseen");
 
-				Console.WriteLine("Syötä luku: ");
-				string userInput;
-				userInput = Console.ReadLine();
-                int number1;
+            Console.WriteLine("Syötä Numero 1:");
+            string numero1 = Console.Readline();
+            int numx = int.Parse (numero1);
 
-			Console.WriteLine("Syötä luku: ");
-			string userInput;
-			userInput = Console.ReadLine();
-			int number2;
+            Console.WriteLine("Syötä Numero 2:");
+            string numero2 = Console.Readline();
+            int numy = int.Parse (numero2);
 
-			Console.WriteLine("Syötä luku: ");
-			string userInput;
-			userInput = Console.ReadLine();
-			int number3;
+            Console.WriteLine("Syötä Numero 3:");
+            string numero3 = Console.Readline();
+            int numz = int.Parse (numero3);
 
-				int.TryParse(userInput, out int evaluatedNumber);
-				isNumber = int.TryParse(userInput, out evaluatedNumber);
-
-
-				// program logic
-				if (isNumber == true)
-				{
-					if (evaluatedNumber > 0 && evaluatedNumber % 2 == 0)
-					{
-						Console.WriteLine($"Numero {evaluatedNumber} on positiivinen ja parillinen");
-					}
-					if (evaluatedNumber > 0 && evaluatedNumber % 2 != 0)
-					{
-						Console.WriteLine($"Numero {evaluatedNumber} on positiivinen ja pariton");
-					}
-					if (evaluatedNumber < 0 && evaluatedNumber % 2 == 0)
-					{
-						Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen ja parillinen");
-					}
-					if (evaluatedNumber < 0 && evaluatedNumber % 2 != 0)
-					{
-						Console.WriteLine($"Numero {evaluatedNumber} on negatiivinen ja pariton");
-					}
-					if (evaluatedNumber == 0)
-					{
-						Console.WriteLine($"Numero on nolla");
-					}
-
-					Console.WriteLine($"Syötit arvon {userInput}");
-
-
-
-				}
-
-				else
-				{
-					Console.WriteLine("Syötit muuta kuin numeroita");
-				}
-			} while (isNumber == true);
-			Console.ReadKey();
-		}
-	}
-}
+            Console.Writeline($"numx}, {numy}, {numz}");
+            Console.ReadKey();
+        } 
+     }
+}       
