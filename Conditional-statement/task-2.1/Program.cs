@@ -14,12 +14,12 @@ namespace task2
             Console.Write("Ikä: ");
             int age = int.Parse(Console.ReadLine());
 
-            if (age < 7)
+            if (age <= 7)
             {
                 discount = 100;
                 discounted = true;
             }
-            else if (age >= && age <= && discounted == false)
+            else if (age >= 7 && age <=15 && discounted == false)
             {
                 discount = discount + 50;
                 discounted = true;
